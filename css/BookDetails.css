@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.book-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.book-image {
+    background-color: #c0c0c0; /* Placeholder color for the image */
+    width: 150px; /* Adjust width as necessary */
+    height: 200px; /* Adjust height as necessary */
+}
+
+.book-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.book-details h1 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 24px;
+}
+
+.book-details p {
+    margin: 5px 0;
+    color: #666666;
+}

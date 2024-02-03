@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side {
+            flex: 1;
+            text-align: center;
+            background-image: url('img/BooksLogin.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 40px;
+        }
+
+        header {
+           color: #080a0b;
+           font-size: 50px;
+           font-family: Lexend,sans-serif;
+           font-Weight: 500;
+           line-Height: 90px;
+          text-Align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+        }
+
+        #forgotPassword {
+            margin-left: auto;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side"></div>
+
+        <div class="right-side">
+            <header>
+                <h1>Welcome Back!</h1>
+                <h2>Sign in to access your account</h2>
+            </header>
+
+            <form id="loginForm">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <label>
+                        <input type="checkbox" name="rememberMe"> Remember me
+                    </label>
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                </div>
+
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

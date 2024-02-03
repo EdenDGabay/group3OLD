@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.wishlist-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.wishlist-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.wishlist {
+    list-style: none;
+    padding: 0;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.wishlist-item img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.book-info {
+    line-height: 1.4;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.author-name {
+    font-size: 14px;
+    color: #000000;
+}
