@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap History</title>
+<style>
+  .swap-history {
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  .swap-history-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .swap-history h2 {
+      text-align: left;
+      margin: 0;
+  }
+
+  .swap-history p {
+      text-align: right;
+      margin: 0;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+  }
+
+  table, th, td {
+      border: 1px solid #ccc;
+  }
+
+  th, td {
+      padding: 8px;
+      text-align: left;
+  }
+
+  th {
+      background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+      background-color: #f9f9f9;
+  }
+
+  tr:hover {
+      background-color: #e8e8e8;
+  }
+
+  a {
+      text-decoration: none;
+      color: #0000EE;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="swap-history">
+    <div class="swap-history-header">
+        <h2>Swap History</h2>
+        <p>Total 150 orders</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>Order Number</th>
+                <th>Swap Date</th>
+                <th>Swapped With</th>
+                <th>Book's Name</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat this row for each order in the history -->
+            <tr>
+                <td>01</td>
+                <td>228-3844-931-7689</td>
+                <td>Oct 20, 2022</td>
+                <td>Someone</td>
+                <td>A</td>
+                <td><a href="#details">Detail</a></td>
+            </tr>
+            <!-- More rows... -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
