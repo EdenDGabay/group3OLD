@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    flex: 1;
+    text-align: center;
+    background-image: url('../img/BooksLogin.png');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+}
+
+.left-side .text {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.right-side {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    color: #080a0b;
+    font-size: 50px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    line-height: 90px;
+    text-align: Center;
+    margin-bottom: 10px;
+}
+
+h2.subheader {
+    text-align: Center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    color: #555;
+    font-weight: lighter;
+    margin-bottom: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px; /* Add margin to the top of the form */
+}
+
+label {
+    margin-top: 25px;
+    font-family: 'Lexend', sans-serif;
+}
+
+input, button {
+    width: 20%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: content-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+#forgotPassword {
+    margin-top: 10px;
+    text-align: center;
+    color: #555; /* Grey color */
+    font-family: 'Lexend', sans-serif;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup p {
+    margin: 0;
+    color: #555; /* Grey color */
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.signup-link {
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+}
+
+.homeButton {
+    width: auto; /* Let the button size adjust based on content */
+    padding: 8px 12px; /* Adjust padding to make the button smaller */
+    background-color: #76491b;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    line-height: 21px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* ... (rest of the styles) */
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 100%; /* Make sure the container takes up the full height */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content horizontally */
+    text-align: center; /* Center text within form */
+}
+
+.loginButton {
+    width: 150px; /* Adjust the width as needed */
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    align-self: center; /* Ensure the button takes full width within the form */
+}
+
+
+label {
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#forgotPassword {
+    margin-top: 10px;
+    text-align: center;
+    color: #555; /* Grey color */
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 40px; /* Increased gap */
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+
+}
+
+
+.signup {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+    font-family: 'Lexend', sans-serif; /* Set font to Lexend */
+}
+
+.signup p {
+    margin: 0;
+    color: #555; /* Grey color */
+    font-size: 14px;
+}
+
+.signup-link {
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif; /* Set font to Lexend */
+}
