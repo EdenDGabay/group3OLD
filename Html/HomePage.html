@@ -3,49 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookHive</title>
+    <title>Book Swap</title>
     <link rel="stylesheet" href="../css/HomePage.css">
+    <style>
+        body {
+            font-family: Lexend, sans-serif;
+            margin: 0;
+            padding: 50px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            // padding-top: 50px;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+        }
+        .search-box input[type="text"] {
+            width: 300px;
+            padding: 10px;
+        }
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+        }
+        .categories {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .category {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block; /* Adjusted for link styling */
+        }
+        .category a {
+            text-decoration: none;
+            color: inherit; /* Inherits the text color from the parent */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="logo">BookHive</div>
-            <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chats</a></li>
-                <li><a href="#">My Profile</a></li>
-            </ul>
-        </nav>
-        <div id="hero">
-            <!-- Hero image goes here -->
-            <h1>Find Your Next Read!</h1>
-            <p>Discover a World of Books</p>
-            <input type="text" id="search" placeholder="Search by Title or Author">
-            <button id="search-btn">Search</button>
-        </div>
-    </header>
-    <main>
-        <section id="popular-categories">
-            <h2>Popular Categories</h2>
-            <!-- For each category, repeat this structure -->
-            <div class="category">
-                <img src="path-to-image.jpg" alt="Category Name">
-                <h3>Category Name</h3>
-            </div>
-            <!-- Add more categories as needed -->
-        </section>
-        <!-- Add other sections as needed -->
-    </main>
-    <footer>
-        <p>BookHive</p>
-        <p>Your Favorite Book Swapping Community Since 2024</p>
-        <!-- Footer links -->
-        <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">How to Guide</a></li>
-        </ul>
-    </footer>
+
+    <h1>Discover a world of books to swap</h1>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search for books...">
+        <input type="submit" value="Search">
+    </div>
+
+    <div class="categories">
+        <div class="category"><a href="#">Fiction</a></div>
+        <div class="category"><a href="#">Non-Fiction</a></div>
+        <div class="category"><a href="#">Science</a></div>
+        <div class="category"><a href="#">History</a></div>
+        <div class="category"><a href="#">Biographies</a></div>
+        <div class="category"><a href="#">Fantasy</a></div>
+        <!-- Add more categories as needed -->
+    </div>
+
 </body>
 </html>

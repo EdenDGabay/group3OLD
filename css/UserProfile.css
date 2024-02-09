@@ -1,4 +1,6 @@
-/* General reset and font import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +8,11 @@
     font-family: 'Lexend', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.main-content {
-    min-height: calc(100% - 40px);
-    padding-bottom: 40px;
-}
-
-/* Same footer styles as before */
-
-
 body {
-    background-color: #f7f7f7;
-    color: #333;
     line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    padding-bottom: 50px; /* Space for footer */
 }
 
 /* Header styles */
@@ -33,8 +23,6 @@ header {
     padding: 20px 10%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 100%;
-    box-sizing: border-box;
 }
 
 header h1 {
@@ -67,88 +55,90 @@ nav ul li a:focus {
     background-color: #4f1f02;
 }
 
-/* Signup container styles */
-.signup-container {
-    max-width: 500px; /* Increased width */
+/* Profile section layout */
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    width: 80%;
+    max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
     background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-.signup-container h2 {
-    font-size: 45px;
-    color: #000000;
-    margin-bottom: 10px;
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.signup-container p {
-    color: #666;
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
-/* Form element styles */
-.signup-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-    padding: 10px;
+.profile-sidebar h2,
+.profile-sidebar p,
+.profile-sidebar .stats {
     margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-/* Terms agreement styles */
-.terms {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.terms input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-/* Button styles */
-button {
-    padding: 15px;
-    background-color: #76491b;
-    color: white;
+.edit-profile-button,
+.message-me-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    background: #76491b;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #4f1f02;
+.edit-profile-button:hover,
+.message-me-button:hover {
+    background: #4f1f02;
 }
 
-/* Link to login page styles */
-.login-link {
+.edit-profile-button {
+    background: #fff;
     color: #76491b;
+    border: 2px solid #76491b;
+}
+
+/* Tabs and additional content styles */
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: start;
+}
+
+.tabs li {
+    margin-right: 20px;
+}
+
+.tabs li a {
     text-decoration: none;
-    margin-top: 15px;
+    color: #333;
+    padding: 10px;
+    display: inline-block;
 }
 
-.login-link a {
-    color: #4f1f02;
-    text-decoration: underline;
-}
-
-.login-link a:hover {
+.tabs li a:hover,
+.tabs li a:focus {
     color: #76491b;
+    border-bottom: 2px solid #76491b;
 }
 
-
+/* Footer styles */
 footer {
     width: 100%;
     background-color: #f7f7f7;
@@ -182,7 +172,6 @@ footer {
     text-decoration: underline;
 }
 
-
 a {
     color: #333;
     text-decoration: none;
@@ -191,4 +180,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-

@@ -1,45 +1,85 @@
-body {
+/* General reset and font import */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body, input, button, a {
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Header styles */
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #76491b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #4f1f02;
+}
+
+/* Container styles */
 .container {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    width: 80%;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
+/* Left side styles */
 .left-side {
     flex: 1;
-    text-align: center;
     background-image: url('../img/BooksLogin.png');
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align content to the left */
 }
 
+/* Hide the white BookHive text */
 .left-side .text {
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Lexend', sans-serif;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
-    align-self: flex-start;
+    display: none;
 }
 
+/* Right side styles */
 .right-side {
     width: 50%;
     padding: 40px;
@@ -48,129 +88,35 @@ body {
     justify-content: center;
 }
 
-header {
+.right-side h1 {
+    font-size: 60px;
+    font-weight: bold;
     color: #080a0b;
-    font-size: 50px;
-    font-family: 'Lexend', sans-serif;
-    font-weight: 500;
-    line-height: 90px;
-    text-align: Center;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-h2.subheader {
-    text-align: Center;
-    font-family: 'Lexend', sans-serif;
+.right-side h2.subheader {
+    text-align: center;
     font-size: 18px;
     color: #555;
     font-weight: lighter;
-    margin-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 1px; /* Add margin to the top of the form */
+    padding: 0 20px;
 }
 
-label {
+form label {
     margin-top: 25px;
-    font-family: 'Lexend', sans-serif;
 }
 
-input, button {
-    width: 20%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: content-box;
-    font-family: 'Lexend', sans-serif;
-}
-
-#forgotPassword {
-    margin-top: 10px;
-    text-align: center;
-    color: #555; /* Grey color */
-    font-family: 'Lexend', sans-serif;
-}
-
-button {
-    background-color: #000000;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    width: 10%;
-}
-
-.signup {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.signup p {
-    margin: 0;
-    color: #555; /* Grey color */
-    font-size: 14px;
-    font-family: 'Lexend', sans-serif;
-}
-
-.signup-link {
-    color: #000000;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-end; /* Align button to the right */
-}
-
-.homeButton {
-    width: auto; /* Let the button size adjust based on content */
-    padding: 8px 12px; /* Adjust padding to make the button smaller */
-    background-color: #76491b;
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 600;
-    line-height: 21px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px; /* Adjust margin as needed */
-}
-
-/* ... (rest of the styles) */
-
-.form-container {
-    display: flex;
-    justify-content: center; /* Center the form horizontally */
-    align-items: center; /* Center the form vertically */
-    height: 100%; /* Make sure the container takes up the full height */
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the form content horizontally */
-    text-align: center; /* Center text within form */
-}
-
-.loginButton {
-    width: 150px; /* Adjust the width as needed */
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    align-self: center; /* Ensure the button takes full width within the form */
-}
-
-
-label {
-    margin-top: 10px;
-}
-
-input, button {
+form input, form button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -180,30 +126,29 @@ input, button {
 #forgotPassword {
     margin-top: 10px;
     text-align: center;
-    color: #555; /* Grey color */
+    color: #555;
 }
 
-button {
-    background-color: #000000;
+/* Button styles */
+button.loginButton {
+    background-color: #76491b;
     color: #fff;
-    cursor: pointer;
-    margin-top: 40px; /* Increased gap */
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 30px;
     border: none;
     border-radius: 5px;
-    width: 250px;
-
+    cursor: pointer;
 }
 
-
+/* Sign up link styles */
 .signup {
     text-align: center;
-    margin-top: 20px; /* Adjust margin as needed */
-    font-family: 'Lexend', sans-serif; /* Set font to Lexend */
+    margin-top: 20px;
 }
 
 .signup p {
-    margin: 0;
-    color: #555; /* Grey color */
+    color: #555;
     font-size: 14px;
 }
 
@@ -211,5 +156,47 @@ button {
     color: #000000;
     font-weight: bold;
     cursor: pointer;
-    font-family: 'Lexend', sans-serif; /* Set font to Lexend */
+}
+
+footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container p {
+    margin: 0;
+    color: #333;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

@@ -5,12 +5,6 @@
     font-family: 'Lexend', sans-serif;
 }
 
-body {
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -50,67 +44,76 @@ nav ul li a:focus {
     background-color: #4f1f02; /* Darker brown on hover/focus */
 }
 
-main {
-    padding: 20px;
-    min-height: 70vh; /* Adjust height as per content */
+/* Contact Us page specific styles */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
 }
 
-main h2 {
-    text-align: Center;
-    font-size: 60px;
-    margin: 20px 0;
-    color: #000000;
-    background-color: #e7c0aa;
-
-}
-
-.wishlist {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for the books */
-    gap: 20px;
-    padding: 20px;
-}
-
-.book {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.contact-us {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
     text-align: center;
 }
 
-.book-cover {
-  width: 250px;
-  height: 400px;
+.contact-us h2 {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 20px;
 }
 
-
-.book-info {
-  padding: 10px;
+.contact-us p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
 }
 
-.book-title {
-  font-size: 25px;
-  margin-top: 10px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.book-author {
-  font-size: 20px;
-  color: #693b22;
+.form-group {
+    margin-bottom: 20px;
 }
 
-
-@media (max-width: 768px) {
-    .wishlist {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    }
+.form-group label {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
 }
 
-@media (max-width: 480px) {
-    .wishlist {
-        grid-template-columns: 1fr; /* 1 column for mobile screens */
-    }
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #76491b;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #4f1f02;
 }
 
 footer {
@@ -145,7 +148,6 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
-
 
 a {
     color: #333;

@@ -1,98 +1,72 @@
-
-body, h1, h2, h3, p, ul {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-}
-
-nav {
-    / Add your navigation styles here /
+    padding: 50px 0 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 5%;
-    background-color: #fff; / example background color /
+    gap: 20px;
+    // padding-top: 50px;
+    background-color: #f5f5f5; /* Light pastel background */
 }
 
-#logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#nav-links li {
-    display: inline;
-    margin-left: 10px;
-}
-
-#nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-#hero {
-    background-image: url('path-to-hero-image.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 50px 5%;
-}
-
-#hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-#hero p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#search {
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-#search-btn {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#popular-categories {
+h1 {
     text-align: center;
-    padding: 20px 5%;
+    color: #5a3e36; /* Pastel brown for text */
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; /* Ensure there's some spacing between search box and categories */
+}
+
+.search-box input[type="text"], .search-box input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-box input[type="submit"] {
+    background-color: #a7856a; /* Pastel brown button */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .category {
-    display: inline-block;
-    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #eae0d5; /* Pastel category background */
     text-align: center;
 }
 
-.category img {
-    width: 100px; / Adjust as needed */
-    height: auto;
-    margin-bottom: 5px;
-}
-
-footer {
-    background-color: #f1f1f1;
-    padding: 20px 5%;
-    text-align: center;
-}
-
-footer p, footer ul {
-    margin-bottom: 10px;
-}
-
-footer a {
+.category a {
     text-decoration: none;
-    color: #000;
+    color: #5a3e36; /* Ensures text color matches the desired palette */
+    display: block; /* Makes the entire area of the category clickable */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.category:hover, .category a:hover {
+    background-color: #d3c1b1; /* Darker shade for hover effect */
+    color: #ffffff; /* Changes text color on hover */
+}
+
+/* Specific styles for the headline background image */
+.headline-background {
+    width: 100%;
+    background-image: url('https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    margin-bottom: 20px; /* Adds spacing between the headline and the rest of the content */
 }
