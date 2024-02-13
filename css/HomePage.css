@@ -1,72 +1,196 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 50px 0 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    // padding-top: 50px;
-    background-color: #f5f5f5; /* Light pastel background */
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h1 {
-    text-align: center;
-    color: #5a3e36; /* Pastel brown for text */
+header h1 {
+    font-size: 40px;
+  font-weight: bold;
+    color: #000000;
 }
 
-.search-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px; /* Ensure there's some spacing between search box and categories */
+nav ul {
+    list-style: none;
 }
 
-.search-box input[type="text"], .search-box input[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+nav ul li {
+    display: inline;
+    margin-left: 20px;
 }
 
-.search-box input[type="submit"] {
-    background-color: #a7856a; /* Pastel brown button */
-    color: white;
-    cursor: pointer;
-    border: none;
-}
-
-.categories {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.category {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #eae0d5; /* Pastel category background */
-    text-align: center;
-}
-
-.category a {
+nav ul li a {
     text-decoration: none;
-    color: #5a3e36; /* Ensures text color matches the desired palette */
-    display: block; /* Makes the entire area of the category clickable */
-    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #fff;
+    background-color: #76491b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-.category:hover, .category a:hover {
-    background-color: #d3c1b1; /* Darker shade for hover effect */
-    color: #ffffff; /* Changes text color on hover */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #4f1f02;
 }
 
-/* Specific styles for the headline background image */
-.headline-background {
+.headline-container {
+  text-align: center;
+  background-color: #E8C2A2;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.headline {
+  font-size: 48px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#search-box {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-family: 'Lexend', sans-serif;
+}
+
+#search-button {
+  width: 100px;
+  border: none;
+  background-color: #D2B48C;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  font-family: 'Lexend', sans-serif;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+#mystery {
+  background-image: url('../img/MysteryCategory.jpg');
+}
+
+#fantasy {
+  background-image: url('../img/FantasyCategory.jpg');
+}
+
+#biography {
+  background-image: url('../img/BiographyCategory.jpg');
+}
+
+#horror {
+  background-image: url('../img/HorrorCategory.jpg');
+}
+
+#romance {
+  background-image: url('../img/RomanceCaregory.jpeg');
+}
+
+#comedy {
+  background-image: url('../img/ComedyCategory.jpg');
+}
+
+#adventure {
+  background-image: url('../img/AdventureCategory.jpg');
+}
+
+#scienceFiction {
+  background-image: url('../img/ScienceFictionCategory.jpg');
+}
+
+#history {
+  background-image: url('../img/HistoryCategory.png');
+}
+
+footer {
     width: 100%;
-    background-image: url('https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    margin-bottom: 20px; /* Adds spacing between the headline and the rest of the content */
+    background-color: #f7f7f7;
+    padding: 20px 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container p {
+    margin: 0;
+    color: #333;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

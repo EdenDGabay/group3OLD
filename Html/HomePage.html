@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Swap</title>
-    <link rel="stylesheet" href="../css/HomePage.css">
-    <style>
-        body {
-            font-family: Lexend, sans-serif;
-            margin: 0;
-            padding: 50px 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            // padding-top: 50px;
-        }
-        .search-box {
-            display: flex;
-            gap: 10px;
-        }
-        .search-box input[type="text"] {
-            width: 300px;
-            padding: 10px;
-        }
-        .search-box input[type="submit"] {
-            padding: 10px 20px;
-        }
-        .categories {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .category {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-            display: inline-block; /* Adjusted for link styling */
-        }
-        .category a {
-            text-decoration: none;
-            color: inherit; /* Inherits the text color from the parent */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Swap World</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/HomePage.css">
 </head>
 <body>
+  <header>
+    <h1>BookHive</h1>
+      <nav>
+       <ul>
+        <li><a href="HomePage.html">Home</a></li>
+         <li><a href="UserProfile.html">Profile</a></li>
+         <li><a href="Chats.html">Chats</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>Discover a world of books to swap</h1>
+<div class="headline-container">
+  <h1 class="headline">Discover A World Of Books To Swap</h1>
+</div>
 
-    <div class="search-box">
-        <input type="text" placeholder="Search for books...">
-        <input type="submit" value="Search">
+<div class="search-container">
+  <input type="text" id="search-box" placeholder="Search for books...">
+  <button type="submit" id="search-button">Search</button>
+</div>
+
+
+<div class="category-grid">
+  <a href="mystery-category-url" class="category-item" id="mystery">Mystery</a>
+  <a href="fantasy-category-url" class="category-item" id="fantasy">Fantasy</a>
+  <a href="biography-category-url" class="category-item" id="biography">Biography</a>
+  <a href="horror-category-url" class="category-item" id="horror">Horror</a>
+  <a href="romance-category-url" class="category-item" id="romance">Romance</a>
+  <a href="comedy-category-url" class="category-item" id="comedy">Comedy</a>
+  <a href="adventure-category-url" class="category-item" id="adventure">Adventure</a>
+  <a href="science-category-url" class="category-item" id="scienceFiction">Science Fiction</a>
+  <a href="history-category-url" class="category-item" id="history">History</a>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <p>BookHive ©</p>
+    <p>Your Favorite Book Swapping Community Since 2024!</p>
+    <div class="footer-links">
+        <a href="../Html/Help.html">Help</a>
+        <a href="../Html/FAQ.html">FAQ</a>
+        <a href="../Html/ContactUs.html">Contact Us</a>
     </div>
-
-    <div class="categories">
-        <div class="category"><a href="#">Fiction</a></div>
-        <div class="category"><a href="#">Non-Fiction</a></div>
-        <div class="category"><a href="#">Science</a></div>
-        <div class="category"><a href="#">History</a></div>
-        <div class="category"><a href="#">Biographies</a></div>
-        <div class="category"><a href="#">Fantasy</a></div>
-        <!-- Add more categories as needed -->
-    </div>
+ </div>
+</footer>
 
 </body>
 </html>
