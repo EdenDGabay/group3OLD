@@ -54,17 +54,18 @@
 </table>
     </div>
 
-<button id="addSwapButton">Add Swap</button>
+<div class="center-container">
+    <button id="addSwapButton">Add Swap</button>
 
-<div id="newSwapForm" style="display:none;">
-    <input type="text" id="swapNumber" placeholder="Swap Number" disabled>
-    <input type="date" id="swapDate" placeholder="Swap Date">
-    <input type="text" id="swappedWith" placeholder="Swapped With">
-    <input type="text" id="bookName" placeholder="Book's Name">
+    <div id="newSwapForm" style="display:none;">
+      <input type="text" id="swapNumber" placeholder="Swap Number" disabled>
+      <input type="date" id="swapDate" placeholder="Swap Date" required>
+      <input type="text" id="swappedWith" placeholder="Swapped With" required>
+      <input type="text" id="bookName" placeholder="Book's Name" required>
     <!-- The onclick here calls the submitNewSwap function -->
-    <button onclick="submitNewSwap()">Submit New Swap</button>
+      <button onclick="submitNewSwap()">Submit New Swap</button>
+    </div>
 </div>
-
 
 <footer>
   <div class="footer-container">

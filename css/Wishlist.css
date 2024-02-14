@@ -113,6 +113,55 @@ main h2 {
     }
 }
 
+.center-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#showAddBookForm {
+    padding: 10px 20px;
+    background-color: #76491b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Adjust based on your layout */
+    transition: background-color 0.3s ease;
+}
+
+#showAddBookForm:hover {
+    background-color: #4f1f02;
+}
+
+#addBookForm {
+    display: none; /* Hidden by default, will be displayed when the button is clicked */
+    margin-top: 20px;
+}
+
+#addBookForm input[type="text"],
+#addBookForm button[type="submit"] {
+    width: 35%; /* Adjust width as needed */
+    padding: 10px;
+    margin: 10px auto; /* Centers the input fields */
+    display: block; /* Stack elements vertically */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addBookForm button[type="submit"] {
+    background-color: #76491b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 35%;
+}
+
+#addBookForm button[type="submit"]:hover {
+    background-color: #4f1f02;
+}
+
+
 footer {
     width: 100%;
     background-color: #f7f7f7;

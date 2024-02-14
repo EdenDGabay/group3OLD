@@ -21,7 +21,7 @@
 
   <main>
     <h2>Wishlist</h2>
-      <section id="wishlist" class="wishlist">
+    <section id="wishlist" class="wishlist">
 
        <div class="book">
         <img src="../img/Memories of a Geisha.jpg" alt="Memoirs of a Geisha" class="book-cover">
@@ -97,6 +97,15 @@
       </div>
 
      </section>
+    <div class="center-container">
+        <button id="showAddBookForm">Add Book to Wishlist</button>
+        <form id="addBookForm" style="display:none;">
+            <input type="text" id="bookTitle" placeholder="Book Title" required>
+            <input type="text" id="bookAuthor" placeholder="Author Name" required>
+            <input type="text" id="bookCover" placeholder="Cover Image URL" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
     </main>
     <footer>
       <div class="footer-container">
@@ -111,6 +120,7 @@
     </footer>
 
 <script src="../JavaScript/Books.js"></script>
+<script src="../JavaScript/Wishlist.js"></script>
 
   </body>
 </html>

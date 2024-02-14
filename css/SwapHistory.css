@@ -23,7 +23,7 @@ header {
 
 header h1 {
     font-size: 40px;
-  font-weight: bold;
+    font-weight: bold;
     color: #000000;
 }
 
@@ -38,8 +38,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    background-color: #76491b;
+    color: #333;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -48,109 +47,122 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #4f1f02;
+    text-decoration: underline;
 }
 
-
 .swap-history {
-  text-align: center;
-  width: 100%;
-  padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .swap-history-header {
-  font-size: 30px;
-  color: #834420;
+    font-size: 30px;
+    color: #333;
 }
 
 .swap-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  border-radius: 8px;
-  overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .swap-table thead {
-  background-color: #e8e8e8;
+    background-color: #e8e8e8;
 }
 
 .swap-table thead th {
-  text-align: center;
-  padding: 15px;
-  font-size: 16px;
-  color: #000000;
-  vertical-align: middle;
-}
-
-.swap-table thead th {
-  text-align: center;
-  padding: 15px;
-  font-size: 16px;
-  color: #000000;
-  vertical-align: middle;
-  background-color: rgb(164, 120, 85);
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    vertical-align: middle;
 }
 
 .swap-table tbody td {
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  border-top: 1px solid #e8e8e8;
-  color: #666;
-  vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #e8e8e8;
+    color: #666;
+    vertical-align: middle;
 }
 
 .swap-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
-#swapForm {
-    /* Add your CSS styles here to match your site's design */
-    margin-top: 20px;
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Spacing between form elements */
+.center-container {
+    text-align: center; /* Centers the button and form horizontally */
 }
 
-#addSwapButton button {
-     padding: 15px;
+#addSwapButton {
+    padding: 15px 30px;
     background-color: #76491b;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 30px;
-}
-#swapForm input[type="text"] {
-    padding: 10px;
-    margin-bottom: 10px; /* Spacing between inputs */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 30px; /* Adjust this value as needed */
+    transition: background-color 0.3s ease;
 }
 
-#swapForm button {
-    padding: 10px 20px;
+#addSwapButton:hover {
+    background-color: #4f1f02;
+}
+
+#newSwapForm {
+    display: inline-block; /* Allows the form to be centered using text-align on the parent */
+    margin-top: 20px; /* Adjust this value as needed */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#newSwapForm input[type="text"],
+#newSwapForm input[type="date"],
+#newSwapForm input[type="email"],
+#newSwapForm input[type="password"] {
+    display: block; /* Stacks the input fields vertically */
+    width: 30%; /* Adjust the width to 50% or any other percentage you prefer */
+    margin: 10px auto; /* Keeps the fields centered and adds space between them */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#newSwapForm button {
+    display: block; /* Aligns the button with the input fields */
+    width: 30%; /* Make sure the button width matches the input fields width */
+    padding: 15px 20px;
     background-color: #76491b;
+    font-family: 'Lexend', sans-serif;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto; /* Centers the button and adds space above and below */
+
 }
 
-#swapForm button:hover {
+#newSwapForm button:hover {
     background-color: #4f1f02;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-    footer {
+footer {
     width: 100%;
     background-color: #f7f7f7;
     padding: 20px 10%;
